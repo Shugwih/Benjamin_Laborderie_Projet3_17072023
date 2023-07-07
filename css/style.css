@@ -49,17 +49,19 @@ header {
     padding: 0rem 1.6rem;
 }
 
-#lodgin_link {
+.nav_link {
     width: 7.1rem;
     height: 2.2rem;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    border-top: 0.125rem solid var(--main-color);
+    border-top: 0.125rem solid transparent;
 }
 
-#lodgin_link a {
+.nav_link:hover {
+    border-top: 0.125rem solid var(--main-color);
     color: var(--main-color);
+    transition: 0.4s;
 }
 
 #activity_link {
@@ -139,6 +141,12 @@ h1 {
     font-size: 1rem;
 }
 
+.search_button:hover {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 /**filter bar**/
 
 #filter_bar {
@@ -150,22 +158,31 @@ h1 {
     width: auto;
 }
 
-.filter {
+#filter_bar p {
+    font-size: 1.125rem;
+}
+
+.filter .filter_button {
     display: flex;
     align-items: center;
     padding: 0 1rem 0 1rem;
     border: 2px solid #f2f2f2;
     border-radius: 1.56rem;
     height: 2.9rem;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.0625rem;
+
 }
 
-.filter p {
-    margin-left: 0.5rem;
-}
-
-.filter:hover {
+.filter:hover .filter_button {
     background-color: var(--filter-bg-color);
     transition: 0.7s;
+    cursor: pointer;
+}
+
+.filter i {
+    margin-right: 0.5rem;
 }
 
 /**info**/
@@ -245,40 +262,51 @@ h1 {
     width: 65%;
 }
 
-.main_card_box {
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.88rem;
+.hebergements h2 {
+    margin: 0;
 }
 
-.main_card {
+.main_card_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.88rem;
+    margin: 1.88rem 0 1.88rem 0;
+}
+
+.main_card a {
     width: 15.6rem;
-    height: 13rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 1.25rem;
-    border: 0.30rem solid white;
     box-sizing: border-box;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 0.3rem;
+}
+
+.main_card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 .main_card_info {
-}
-
-.main_card_content {
-    
-}
-
-.main_card_rating {
-    
+    padding: 0 0.94rem 0 0.94rem;
 }
 
 .main_card_content h3 {
     font-size: 1rem;
+    margin: 0.65rem 0 0 0;
 }
 
 .main_card_content p {
     font-size: 0.875rem;
+    margin: 0.5rem 0 0 0;
+}
+
+.main_card i {
+    margin: 0.8rem 0 0.9rem 0;
+    font-size: 0.8rem;
 }
 
 .main_card img {
@@ -286,6 +314,18 @@ h1 {
     width: auto;
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.button_more {
+    display: inline-flex;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 0.7rem 0 0 0;
+}
+
+.button_more:hover {
+    cursor: pointer;
 }
 
 /****** Populaires ***********/

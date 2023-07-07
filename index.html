@@ -49,20 +49,28 @@
                 <p>Filtres</p>
             </div>
             <div class="filter">
-                <i class="fa-solid fa-money-bill-wave"></i>
-                <p>Économique</p>
+                <button class="filter_button">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Économique
+                </button>
             </div>
             <div class="filter">
-                <i class="fa-solid fa-person"></i>
-                <p>Familial</p>
+                <button class="filter_button">
+                    <i class="fa-solid fa-person"></i>
+                    Familial
+                </button>
             </div>
             <div class="filter">
-                <i class="fa-solid fa-heart"></i>
-                <p>Romantique</p>
+                <button class="filter_button">
+                    <i class="fa-solid fa-heart"></i>
+                    Romantique
+                </button>
             </div>
             <div class="filter">
-                <i class="fa-solid fa-fire"></i>
-                <p>Nos pépites</p>
+                <button class="filter_button">
+                    <i class="fa-solid fa-fire"></i>
+                    Nos pépites
+                </button>
             </div>
         </div>
         <div class="info">
@@ -70,21 +78,39 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </div>
-    <!--preintegrated code-->
     <div class="main-container">
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <div class="herbergements_title">
+                    <div id="herbergements_title">
                         <h2>Hébergements à Marseille</h2>
                     </div>
                     <div class="main_card_box">
                         <article class="main_card">
-                            <img src="images/hebergements/fred-kleber.jpg" alt="Une chambre double moderne et lumineuse">
+                            <a href="#" class="hebergement_link">
+                                <img src="images/hebergements/fred-kleber.jpg" alt="Une chambre double moderne et lumineuse">
+                                <div class="main_card_info">
+                                    <div class="main_card_content">    
+                                        <h3>Hôtel du port</h3>
+                                        <p>Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="main_card_rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="main_card">
+                            <a href="#" class="hebergement_link">
+                            <img src="images/hebergements/febrian-zakaria.jpg" alt="Une chambre et un espace bureau">
                             <div class="main_card_info">
                                 <div class="main_card_content">    
-                                    <h3>Hôtel du port</h3>
-                                    <p>Nuit à partir de 52€</p>
+                                    <h3>Hôtel Chez Amina</h3>
+                                    <p>Nuit à partir de 96<span class="euro">€</span></p>
                                 </div>
                                 <div class="main_card_rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -94,78 +120,84 @@
                                     <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            </a>
                         </article>
                         <article class="main_card">
-                            <img src="images/hebergements/febrian-zakaria.jpg" alt="Une chambre double moderne et lumineuse">
-                            <div class="main_card_content">    
-                                <h3>Hôtel Chez Amina</h3>
-                                <p>Nuit à partir de 96€</p>
-                            </div>
-                            <div class="main_card_rating">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                            </div>
-                        </article>
-                        <article class="main_card">
+                            <a href="#" class="hebergement_link">
                             <img src="images/hebergements/reisetopia.jpg" alt="Une chambre double moderne et lumineuse">
-                            <div class="main_card_content">    
-                                <h3>Hôtel Les mouettes</h3>
-                                <p>Nuit à partir de 76€</p>
+                            <div class="main_card_info">
+                                <div class="main_card_content">    
+                                    <h3>Hôtel Les mouettes</h3>
+                                    <p>Nuit à partir de 76<span class="euro">€</span></p>
+                                </div>
+                                <div class="main_card_rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="main_card_rating">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                            </div>
+                            </a>    
                         </article>
                         <article class="main_card">
+                            <a href="#" class="hebergement_link">
                             <img src="images/hebergements/annie-spratt.jpg" alt="Une chambre double moderne et lumineuse">
-                            <div class="main_card_content">    
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46€</p>
+                            <div class="main_card_info">
+                                <div class="main_card_content">    
+                                    <h3>Hôtel de la mer</h3>
+                                    <p>Nuit à partir de 46<span class="euro">€</span></p>
+                                </div>
+                                <div class="main_card_rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="main_card_rating">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                            </div>
+                            </a>
                         </article>
                         <article class="main_card">
+                            <a href="#" class="hebergement_link">
                             <img src="images/hebergements/marcus-loke.jpg" alt="Une chambre double moderne et lumineuse">
-                            <div class="main_card_content">    
-                                <h3>Auberge La Canebière</h3>
-                                <p>Nuit à partir de 25€</p>
+                            <div class="main_card_info">
+                                <div class="main_card_content">    
+                                    <h3>Auberge La Canebière</h3>
+                                    <p>Nuit à partir de 25<span class="euro">€</span></p>
+                                </div>
+                                <div class="main_card_rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="main_card_rating">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                            </div>
+                            </a>
                         </article>
                         <article class="main_card">
+                            <a href="#" class="hebergement_link">
                             <img src="images/hebergements/nicate-lee.jpg" alt="Une chambre double moderne et lumineuse">
-                            <div class="main_card_content">    
-                                <h3>Auberge Le Panier</h3>
-                                <p>Nuit à partir de 23€</p>
+                            <div class="main_card_info">
+                                <div class="main_card_content">    
+                                    <h3>Auberge Le Panier</h3>
+                                    <p>Nuit à partir de 23<span class="euro">€</span></p>
+                                </div>
+                                <div class="main_card_rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                </div>
                             </div>
-                            <div class="main_card_rating">
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
-                            </div>
+                            </a>
                         </article>
                     </div>
+                    <button class="button_more">
+                        Afficher plus
+                    </button>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
