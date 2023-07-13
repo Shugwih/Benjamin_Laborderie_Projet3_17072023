@@ -209,7 +209,7 @@ h1 {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 3.125rem;
     box-sizing: border-box;
 }
 
@@ -220,8 +220,8 @@ h1 {
 
 .card {
     background-color: white;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 1.25rem;
+    padding: 0.313rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -230,7 +230,7 @@ h1 {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .euro {
@@ -249,8 +249,8 @@ h1 {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 1.25rem;
+    padding: 1.875rem 1.875rem 0 1.875rem;
     box-sizing: border-box;
 }
 
@@ -339,40 +339,63 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0 1.875rem 0;
 }
 
-.populaires-cards .card {
+.card {
+    margin-bottom: 1.875rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.populaires-cards a {
     display: flex;
-    margin-top: 33px;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.313rem;
+}
+
+.card-txt h3 {
+    margin: 1rem 0 0 0;
+}
+
+.card-txt p {
+    margin: 0;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    height: 8.5rem;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
 }
 
 .populaires-cards .card-content {
     width: 67%;
-    padding-left: 15px;
+    padding-left: 0.938rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+.populaires-cards .card-title a {
+    margin-top: 0.625rem;
+    margin-bottom: 0.25rem;
 }
 
-.populaires-cards .card-subtitle {
+.populaires-cards .card-subtitle a {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
-    margin-bottom: 5px;
+.populaires-cards .card-rating a {
+    margin-bottom: 0.313rem;
 }
 
 /***********Activiy_section************/
@@ -382,8 +405,6 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.8rem;
     padding-top: 1.875rem;
-    /**border: 1px solid red;
-    background-color: rgba(255, 0, 0, 0.374);**/
 }
 
 .activity_main {
@@ -400,6 +421,11 @@ h1 {
     background-color: white;
 }
 
+.activity_card_box a:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .activity_card_txt h3 {
     font-size: 1rem;
     padding: 0 0 0 1.188rem;
@@ -411,11 +437,6 @@ h1 {
     object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
-/**
-.activity_card_box img {
-    height: 23.75rem;
-}
-**/
 
 /***********Footer************/
 
