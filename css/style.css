@@ -269,10 +269,19 @@ h1 {
 }
 
 .main_card_box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.688rem, 1fr));
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.88rem;
-    margin: 1.88rem 0 1.88rem 0;
+    margin: 1.88rem 0 1.88rem 0;*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+article.main_card {
+    min-width: 10.063rem;
+    width: 30%;
+    margin: 2% 0;
 }
 
 .main_card a {
@@ -283,6 +292,7 @@ h1 {
     box-sizing: border-box;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     padding: 0.3rem;
+    height: 14rem;
 }
 
 .main_card:hover {
@@ -291,7 +301,7 @@ h1 {
 }
 
 .main_card_info {
-    padding: 0 0.94rem 0 0.94rem;
+    padding: 0 0.4rem 0 0.4rem;
 }
 
 .main_card_content h3 {
@@ -321,7 +331,7 @@ h1 {
     border: none;
     font-size: 1.125rem;
     font-weight: bold;
-    padding: 0.7rem 0 0 0;
+    padding: 4% 0;
     background-color: transparent;
 }
 
@@ -338,11 +348,11 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 1.875rem 0;
+    padding: 0 0 8% 0;
 }
 
 .card {
-    margin-bottom: 1.875rem;
+    margin-bottom: 8%;
 }
 
 .card:hover {
@@ -505,6 +515,10 @@ h1 {
 
     .button_more {
         padding: 0 0 1.875rem 0;
+    }
+
+    .populaires-title {
+        padding: 0 0 4% 0;
     }
 
     .populaires {
@@ -682,14 +696,15 @@ h1 {
         align-items: center;
     }
 
-    .main_card {
+    article.main_card {
         width: 17.688rem;
-        height: 12.5rem;
+        height: auto;
         max-width: none;
     }
 
     .button_more {
-        width: 18rem;
+        width: 19rem;
+        padding: 0.875rem 0 0 0;
     }
 
     .populaires {
@@ -699,6 +714,7 @@ h1 {
 
     .populaires-title {
         justify-content: space-evenly;
+        padding: 0 0 6% 0;
     }
 
     .populaires-cards {
@@ -709,6 +725,7 @@ h1 {
 
     .populaires-cards .card {
         width: 17.688rem;
+        margin-bottom: 4%;
     }
 
     .activity_main {
